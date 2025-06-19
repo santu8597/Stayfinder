@@ -6,7 +6,7 @@
 import mongoose,{Schema} from "mongoose"
 // import User from "../models/js/User"
 // import Property from "../models/js/Property"
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/stayfinder"
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://santup205:pvCjKk7jZEyxnEGp@restraunt.eqk7p.mongodb.net/stayfinder"
 // // import Property from "../models/Property"
 // const User=require("../models/js/User")
 // const Property=require("../models/js/Property")
@@ -271,7 +271,7 @@ const sampleProperties = [
     bedrooms: 4,
     bathrooms: 3,
     amenities: ["Mountain View", "Fireplace", "Parking", "Wifi", "Hot Tub"],
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["https://3.imimg.com/data3/FM/MD/MY-1906485/hotel-booking-500x500.jpg","https://flh.ca/media/15310/acc-content.jpg?anchor=center&mode=crop&width=700&height=400&rnd=132830010099600000","https://www.theparkhotels.com/images/site-specific/navi-mumbai/rooms_suites/superior_rooms/superior_room.jpg","https://www.kayak.co.in/rimg/himg/09/a3/22/ice-233787600-70630220_3XL-992040.jpg?width=1366&height=768&crop=true","https://www.theparkhotels.com/images/site-specific/navi-mumbai/rooms_suites/accommodation_banner.jpg"],
     isActive: true,
     rating: 4.7,
     reviewCount: 156,
