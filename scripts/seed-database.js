@@ -1,15 +1,6 @@
-// const mongoose = require("mongoose")
-// import mongoose from "mongoose"
-// // MongoDB connection
-// import User from "../models/User"
-
 import mongoose,{Schema} from "mongoose"
-// import User from "../models/js/User"
-// import Property from "../models/js/Property"
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://santup205:pvCjKk7jZEyxnEGp@restraunt.eqk7p.mongodb.net/stayfinder"
-// // import Property from "../models/Property"
-// const User=require("../models/js/User")
-// const Property=require("../models/js/Property")
+
 const UserSchema = new Schema(
   {
     firstName: {
@@ -276,6 +267,162 @@ const sampleProperties = [
     rating: 4.7,
     reviewCount: 156,
   },
+  {
+  title: "Cozy Beachside Bungalow",
+  description:
+    "Relax in this peaceful beachside retreat, just steps away from the ocean. Enjoy breathtaking sunsets, a private patio, and modern comforts.",
+  type: "House",
+  location: {
+    address: "456 Ocean Ave",
+    city: "Santa Monica",
+    state: "CA",
+    country: "USA",
+    zipCode: "90401",
+    coordinates: {
+      lat: 34.0195,
+      lng: -118.4912,
+    },
+  },
+  price: 210,
+  guests: 2,
+  bedrooms: 1,
+  bathrooms: 1,
+  amenities: ["Wifi", "Beach Access", "Air Conditioning", "Private Patio"],
+  images: [
+    "https://images.unsplash.com/photo-1507089947368-19c1da9775ae",
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+  ],
+  isActive: true,
+  rating: 4.6,
+  reviewCount: 89,
+},
+{
+  title: "Luxury Mountain Cabin",
+  description:
+    "Escape to this luxurious mountain cabin surrounded by nature. Featuring a fireplace, hot tub, and panoramic views of the Rockies.",
+  type: "Cabin",
+  location: {
+    address: "789 Pine Ridge Rd",
+    city: "Aspen",
+    state: "CO",
+    country: "USA",
+    zipCode: "81611",
+    coordinates: {
+      lat: 39.1911,
+      lng: -106.8175,
+    },
+  },
+  price: 320,
+  guests: 6,
+  bedrooms: 3,
+  bathrooms: 2,
+  amenities: ["Wifi", "Hot Tub", "Fireplace", "Mountain View", "Parking"],
+  images: [
+    "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "https://images.unsplash.com/photo-1598928506311-c55dedab0c4c",
+    "https://images.unsplash.com/photo-1613977257363-d1e8a441bfb6"
+  ],
+  isActive: true,
+  rating: 4.9,
+  reviewCount: 210,
+}
+,
+{
+  title: "Urban Penthouse with Skyline Views",
+  description:
+    "Sleek and sophisticated penthouse in the heart of downtown Chicago. Enjoy rooftop access, luxury interiors, and 360° skyline views.",
+  type: "Cabin",
+  location: {
+    address: "321 Lake Shore Dr",
+    city: "Chicago",
+    state: "IL",
+    country: "USA",
+    zipCode: "60601",
+    coordinates: {
+      lat: 41.8839,
+      lng: -87.6196,
+    },
+  },
+  price: 450,
+  guests: 5,
+  bedrooms: 2,
+  bathrooms: 2,
+  amenities: ["Wifi", "Rooftop Access", "Elevator", "Gym", "Smart TV"],
+  images: [
+    "https://thearchitectsdiary.com/wp-content/uploads/2021/04/Urban-Zen-A-Majestic-Penthouse-1024x684.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13xfvCHHGQQOEmb6Uxc_yUgQ-RURJCxXkGw&s",
+    "https://4bhk-duplex-lavish-penthouse-apartment.kolkatahotelsweb.com/data/Pics/OriginalPhoto/14616/1461647/1461647020/kolkata-pic-32.JPEG"
+  ],
+  isActive: true,
+  rating: 4.7,
+  reviewCount: 134,
+}
+,
+{
+  title: "Rustic Lakeside Cottage",
+  description:
+    "Charming cottage on the lake, perfect for a peaceful family getaway. Offers fishing gear, BBQ area, and a cozy fireplace.",
+  type: "Villa",
+  location: {
+    address: "101 Lakeview Ln",
+    city: "Lake Placid",
+    state: "NY",
+    country: "USA",
+    zipCode: "12946",
+    coordinates: {
+      lat: 44.2795,
+      lng: -73.9799,
+    },
+  },
+  price: 175,
+  guests: 4,
+  bedrooms: 2,
+  bathrooms: 1,
+  amenities: ["Fireplace", "Lake Access", "BBQ", "Fishing Gear", "Board Games"],
+  images: [
+    "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
+    "https://images.unsplash.com/photo-1559599238-72325c746d89",
+    "https://images.unsplash.com/photo-1601914535508-bb0dbfda2c2b"
+  ],
+  isActive: true,
+  rating: 4.5,
+  reviewCount: 102,
+}
+,
+{
+  title: "Boutique Heritage Hotel",
+  description:
+    "Stay in a beautifully restored heritage hotel blending traditional charm with modern amenities. Located in the heart of Jaipur’s historic district.",
+  type: "Apartment",
+  location: {
+    address: "17 Palace Rd",
+    city: "Jaipur",
+    state: "Rajasthan",
+    country: "India",
+    zipCode: "302001",
+    coordinates: {
+      lat: 26.9124,
+      lng: 75.7873,
+    },
+  },
+  price: 120,
+  guests: 3,
+  bedrooms: 1,
+  bathrooms: 1,
+  amenities: ["Wifi", "Breakfast", "Air Conditioning", "Cultural Tours"],
+  images: [
+    "https://cdn1.tripoto.com/media/filter/tst/img/1633963/Image/1675314785_the_eldest.jpeg.webp",
+    "https://media-cdn.tripadvisor.com/media/photo-s/16/5a/17/5d/the-tea-lounge.jpg",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/57719811.jpg?k=48feb426398b24a243d52933c8dec4910374d510e24f075968a90e18260b18dc&o=&hp=1"
+  ],
+  isActive: true,
+  rating: 4.3,
+  reviewCount: 78,
+}
+
+
+
 ]
 
 async function seedDatabase() {
